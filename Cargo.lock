@@ -226,9 +226,9 @@ dependencies = [
 name = "boilerplate-rs"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "clap 4.1.13",
  "example-lib",
- "eyre",
  "tracing",
  "tracing-subscriber",
 ]
@@ -1158,8 +1158,8 @@ dependencies = [
 name = "example-lib"
 version = "0.1.0"
 dependencies = [
+ "anyhow",
  "ethers",
- "eyre",
  "tracing",
 ]
 

@@ -1,12 +1,12 @@
+use anyhow::{anyhow, Result};
 use clap::{ArgAction, Parser};
-use eyre::Result;
 use tracing::Level;
 
 /// A simple clap boilerplate
 #[derive(Parser, Debug)]
 #[command(author, version, about)]
 struct Args {
-    /// Verbosity level = 1
+    /// Verbosity level (0-4)
     #[arg(long, short, help = "Verbosity level (0-4)", action = ArgAction::Count)]
     v: u8,
 
@@ -49,5 +49,5 @@ fn init_tracing_subscriber(verbosity_level: u8) -> Result<()> {
             _ => Level::TRACE,
         })
         .finish();
-    tracing::subscriber::set_global_default(subscriber).map_err(|e| eyre::eyre!(e))
+    tracing::subscriber::set_global_default(subscriber).map_err(|e| anyhow!(e))
 }

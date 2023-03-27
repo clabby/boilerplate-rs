@@ -1,5 +1,5 @@
+use anyhow::Result;
 use ethers::utils::{hex, keccak256};
-use eyre::Result;
 
 /// Parses a hex string into bytes and hashes it using the Keccak-256 algorithm.
 ///

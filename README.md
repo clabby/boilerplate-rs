@@ -2,7 +2,7 @@
 
 # `boilerplate-rs` • [![ci](https://github.com/clabby/boilerplate-rs/actions/workflows/ci.yaml/badge.svg?label=ci)](https://github.com/clabby/boilerplate-rs/actions/workflows/ci.yaml) ![license](https://img.shields.io/badge/License-MIT-green.svg?label=license)
 
-A barebones boilerplate for Rust projects.
+A dead simple boilerplate for Rust projects.
 
 **Project Structure**
 ```
@@ -26,7 +26,7 @@ A barebones boilerplate for Rust projects.
 **Pre-installed crates**
 - [clap](https://crates.io/crates/clap)
 - [tracing](https://crates.io/crates/tracing)
-- [eyre](https://crates.io/crates/eyre)
+- [anyhow](https://crates.io/crates/anyhow)
 
 **Getting Started**
 1. Clone the repo
