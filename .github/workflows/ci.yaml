@@ -58,4 +58,4 @@ jobs:
       - name: build
         id: build
         continue-on-error: true
-        run: cargo +nightly build --all
+        run: cargo build --all
